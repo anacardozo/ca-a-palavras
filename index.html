@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Palavras</title>
+</head>
+<body>
+    <center>
+        <script>
+            matriz = new Array;
+        matriz = [["H", "j", "B", "A", "R", "R", "E", "A", "D", "O", "L", "X", "U", "L", "P"],
+        ["A", "F", "C", "U", "J", "M", "R", "P", "O", "Ç", "H", "K", "F", "Ç", "I"],
+        ["k", "R", "l", "S", "E", "N", "O", "A", "Ç", "D", "S", "T", "E", "D", "X"],
+        ["g", "B", "R", "I", "G", "A", "D", "E", "I", "R", "O", "X", "I", "U", "B"],
+        ["y", "J", "U", "G", "J", "B", "X", "D", "J", "G", "Z", "O", "J", "E", "M"],
+        ["I", "A", "L", "V", "O", "I", "D", "P", "R", "L", "P", "S", "O", "S", "T"],
+        ["O", "B", "I", "C", "A", "J", "G", "A", "L", "I", "N", "H", "A", "D", "A"],
+        ["J", "A", "A", "E", "D", "U", "P", "J", "P", "I", "Q", "A", "D", "S", "A"],
+        ["M", "R", "P", "A", "A", "E", "V", "U", "E", "X", "R", "O", "A", "Ã", "I"],
+        ["L", "Á", "J", "B", "I", "L", "M", "O", "Q", "U", "E", "C", "A", "R", "D"],
+        ["Z", "G", "O", "P", "A", "D", "H", "K", "S", "Q", "A", "H", "B", "Q", "V"],
+        ["F", "A", "M", "T", "A", "C", "A", "C", "Á", "F", "G", "B", "T", "X", "C"],
+        ["G", "U", "Q", "H", "C", "O", "X", "I", "N", "H", "A", "Ç", "T", "D", "D"],
+        ["C", "J", "V", "S", "C", "K", "V", "X", "A", "M", "A", "W", "U", "H", "X"],
+        ["X", "A", "C", "A", "R", "A", "J", "É", "I", "H", "J", "E", "B", "P", "E"]];
+
+        document.write(" <h1> Caça palavras TEMA COMIDAS TIPICAS DO BRASIL</h1> ")
+
+        document.write("<br>")
+        
+        document.write("<table>");
+        for(linha= 0; linha < 15; linha++){
+            document.write("<tr>");
+            for(elemento = 0; elemento < 15; elemento++){
+                if((elemento== 12) && ((linha >= 1) && (linha<= 8))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((linha == 9) && ((elemento >= 6) && (elemento <= 12))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((linha == 11) && ((elemento >= 3) && (elemento <= 8))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((linha == 6) && ((elemento >= 6) && (elemento <= 14))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((linha ==14 ) && ((elemento >= 1) && (elemento <= 7))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((elemento == 1) && ((linha >= 5) && (linha <= 9))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((linha == 0) && ((elemento >= 2) && (elemento <= 9))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((linha == 3) && ((elemento >= 1) && (elemento <= 10))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((linha == 12) && ((elemento >= 4) && (elemento <= 10))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else if((elemento == 5) && ((linha >= 4) && (linha <= 7))){
+                    document.write("<td class='palavra-cor'>" + matriz[linha][elemento] + "</td>");
+                }
+        
+                else{
+                    document.write("<td>" + matriz[linha][elemento] + "</td>");
+                }
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        </script>
+
+    </center>
+</table>
+
+</body>
+</html>
